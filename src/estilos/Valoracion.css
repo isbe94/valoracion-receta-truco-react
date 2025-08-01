@@ -1,0 +1,61 @@
+.contenedor-valoracion {
+    width: 100%;
+    max-width: 1170px;
+    height: 368px;
+    margin: 10px 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+    border-radius: 20px;
+}
+
+.imagen-valoracion {
+    height: 70%;
+    width: auto;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.contenedor-texto-valoracion {
+    text-align: center;
+    padding: 30px 40px;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.nombre-valoracion {
+    font-size: 1.3rem;
+}
+
+.cargo-valoracion {
+    font-size: 1.3rem;
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+
+.texto-valoracion {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* Estrellas */
+.contenedor-estrellas {
+    margin: 8px 0;
+    font-size: 30px;
+}
+
+.estrella-llena {
+    color: #ffd700;
+    margin-right: 2px;
+}
+
+.estrella-vacia {
+    color: #ddd;
+    margin-right: 2px;
+}
+
+.contenedor-estrellas:hover .estrella-llena {
+    color: #ffed4e;
+}
