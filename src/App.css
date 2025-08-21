@@ -33,8 +33,6 @@ h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px 0;
-    /* Añade padding vertical para separar del borde del navegador */
 }
 
 .contenedor-principal {
@@ -55,13 +53,19 @@ h1 {
 
 /* --- Media Query para dispositivos móviles --- */
 @media screen and (max-width: 768px) {
+
+    .App {
+        padding: 0;
+    }
+
     h1 {
         margin: 25px auto;
         font-size: 1.3em;
     }
 
     .contenedor-principal {
-        padding: 15px;
-        min-height: auto;
+        padding: 25px 15px;
+        min-height: 100vh;
+        border-radius: 0;
     }
 }
