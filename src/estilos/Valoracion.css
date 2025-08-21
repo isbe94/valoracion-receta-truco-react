@@ -1,7 +1,10 @@
+/* Valoracion.css */
+
 .contenedor-valoracion {
     width: 100%;
     max-width: 1170px;
-    height: 368px;
+    height: auto;
+    min-height: 300px;
     margin: 10px 10px 50px;
     display: flex;
     align-items: center;
@@ -9,24 +12,30 @@
     background-color: #ffffff;
     box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
     border-radius: 20px;
+    padding: 20px;
 }
 
 .imagen-valoracion {
-    height: 70%;
-    width: auto;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    /* Asegura que la imagen no se deforme */
     border-radius: 50%;
-    margin-left: 30px;
+    margin-right: 40px;
 }
 
 .contenedor-texto-valoracion {
-    text-align: center;
-    padding: 30px 40px;
+    text-align: left;
+    padding: 20px;
     font-weight: 400;
     line-height: 1.5rem;
+    width: 100%;
+    /* Ocupa el espacio restante */
 }
 
 .nombre-valoracion {
     font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .cargo-valoracion {
@@ -42,7 +51,7 @@
 
 /* Estrellas */
 .contenedor-estrellas {
-    margin: 8px 0;
+    margin: 8px 0 15px 0;
     font-size: 30px;
 }
 
@@ -56,6 +65,38 @@
     margin-right: 2px;
 }
 
-.contenedor-estrellas:hover .estrella-llena {
-    color: #ffed4e;
+/* --- Media Query para pantallas pequeñas (móviles y tablets en vertical) --- */
+@media screen and (max-width: 768px) {
+    .contenedor-valoracion {
+        /* Apila los elementos verticalmente */
+        flex-direction: column;
+        margin: 20px 10px;
+        padding: 25px;
+    }
+
+    .imagen-valoracion {
+        height: 150px;
+        width: 150px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contenedor-texto-valoracion {
+        text-align: center;
+        padding: 0;
+    }
+
+    .texto-valoracion {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .nombre-valoracion,
+    .cargo-valoracion {
+        font-size: 1.2rem;
+    }
+
+    .contenedor-estrellas {
+        font-size: 24px;
+    }
 }
